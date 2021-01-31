@@ -4,7 +4,7 @@ export default {
   page: 1,
   query: '',
   async fetcArticles(query) {
-    const keyapi = '16607986-426163c53c50d3a083010b3ce';
+    const keyapi = '20097100-19ea94b8e832134be461aaf4e';
     const requestparams = `?image_type=photo&orientation=horizontal&q=${this.query}&page=${this.page}&per_page=12&key=${keyapi}`;
     const res = await fetch(baseUrl + requestparams);
     const parseRes = await res.json();
